@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div id="form">
+        <h1 id="title">Sign up</h1>
+        <p id="description">Rellena este formulario de registro.</p>
+        <form action="" name="sing-up" id="survey-form">
+            <label for="name"id="name-label" >Nombre</label>
+            <br>
+            <input type="text" id="name"><br>
+            
+            <label for="email" id="email-label" >Correo eléctronico</label>
+            <br>
+            <input type="email" id="email"><br>
+            
+            <label for="number" id="number-label" >Edad</label>
+            <br>
+            <input type="number" min="18" max="150" id="number">
+
+            <div id="place">
+                <p>¿En que continente vives?</p>
+                <select id="dropdown">
+                    <option value="place">Europa</option>
+                    <option value="place">Asia</option>
+                    <option value="place">América</option>
+                    <option value="place">Oceanía</option>
+                    <option value="place">África</option>
+                </select>
+            </div>
+
+            <div id="contact">
+                <p>¿Como te contactamós?</p>
+                <input type="radio" name="contact" id="Phone_number">
+                <label class="opc" for="Phone_number">Phone</label>
+                <input type="radio" name="contact" id="Email">
+                <label class="opc" for="Email">Email</label>
+                <input type="radio" name="contact" id="Mail">
+                <label class="opc" for="Mail">Mail</label>
+            </div>
+            
+            <div id="lenguage">
+                <p>¿Qué idiomas hablas?</p>
+                <input type="checkbox" name="lenguage" id="leng1">
+                <label class="opc" for="leng1">Inglés</label>
+                <input type="checkbox" name="lenguage" id="leng2">
+                <label class="opc" for="leng2">Español</label>
+                <input type="checkbox" name="lenguage" id="leng3">
+                <label class="opc" for="leng3">Francés</label>
+            </div>
+
+            <textarea id="comment" placeholder="Cometario" name="" id="" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
