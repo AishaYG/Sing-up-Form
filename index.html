@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
     <title>Sign up</title>
 </head>
 <body>
@@ -14,52 +15,52 @@
         <form action="" name="sing-up" id="survey-form">
             <label for="name"id="name-label" >Nombre</label>
             <br>
-            <input type="text" id="name"><br>
+            <input name="name" type="text" id="name" required><br>
             
             <label for="email" id="email-label" >Correo eléctronico</label>
             <br>
-            <input type="email" id="email"><br>
+            <input type="email" name="email" id="email" required><br>
             
-            <label for="number" id="number-label" >Edad</label>
+            <label for="number" id="number-label">Edad</label>
             <br>
-            <input type="number" min="18" max="150" id="number">
+            <input type="number" name="number" min="18" max="150" id="number" required>
 
             <div id="place">
                 <p>¿En que continente vives?</p>
                 <select id="dropdown">
-                    <option value="place">Europa</option>
-                    <option value="place">Asia</option>
-                    <option value="place">América</option>
-                    <option value="place">Oceanía</option>
-                    <option value="place">África</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="América">América</option>
+                    <option value="Oceanía">Oceanía</option>
+                    <option value="África">África</option>
                 </select>
             </div>
 
             <div id="contact">
                 <p>¿Como te contactamós?</p>
-                <input type="radio" name="contact" id="Phone_number">
-                <label class="opc" for="Phone_number">Phone</label>
-                <input type="radio" name="contact" id="Email">
+                <input value="Móvil" type="radio" name="contact" id="Phone_number">
+                <label class="opc" for="Phone_number">Móvil</label>
+                <input value="Email" type="radio" name="contact" id="Email">
                 <label class="opc" for="Email">Email</label>
-                <input type="radio" name="contact" id="Mail">
-                <label class="opc" for="Mail">Mail</label>
+                <input value="Correo" type="radio" name="contact" id="Mail">
+                <label class="opc" for="Mail">Correo</label>
             </div>
             
             <div id="lenguage">
-                <p>¿Qué idiomas hablas?</p>
-                <input type="checkbox" name="lenguage" id="leng1">
+                <p>¿Qué idiomas quieres aprender?</p>
+                <input type="checkbox" name="lenguage" id="leng1" value="Inglés">
                 <label class="opc" for="leng1">Inglés</label>
-                <input type="checkbox" name="lenguage" id="leng2">
+                <input type="checkbox" name="lenguage" id="leng2" value="Español">
                 <label class="opc" for="leng2">Español</label>
-                <input type="checkbox" name="lenguage" id="leng3">
+                <input type="checkbox" name="lenguage" id="leng3" value="Francés">
                 <label class="opc" for="leng3">Francés</label>
             </div>
 
-            <textarea id="comment" placeholder="Cometario" name="" id="" cols="30" rows="10"></textarea>
+            <textarea id="comment" placeholder="Cometario" name="comment" id="" cols="30" rows="10"></textarea>
 
             <br>
 
-            <button id="submit" type="submit">Submit</button>
+            <button id="submit" type="button" onclick="getData()">Submit</button>
 
         </form>
     </div>

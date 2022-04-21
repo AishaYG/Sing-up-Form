@@ -65,7 +65,7 @@ select{
 #comment{
     margin-top: 9px;
 }
-input, p, button #dropdown, #contact, #lenguage{
+input, p, button #dropdown, #contact-list, #lenguage{
     margin-top: 2.5px;
     margin-bottom: 5px;
 }
