@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="javascript.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Sign up</title>
 </head>
 <body>
     <div id="form">
         <h1 id="title">Sign up</h1>
         <p id="description">Rellena este formulario de registro.</p>
-        <form action="" name="sing-up" id="survey-form">
+        <form onsubmit="pushData()" name="sing-up" id="survey-form">
             <label for="name"id="name-label" >Nombre</label>
             <br>
             <input name="name" type="text" id="name" required><br>
@@ -25,7 +23,7 @@
             <label for="number" id="number-label">Edad</label>
             <br>
             <input type="number" name="number" min="18" max="150" id="number" required>
-
+            
             <div id="place">
                 <p>¿En que continente vives?</p>
                 <select id="dropdown">
@@ -36,7 +34,7 @@
                     <option value="África">África</option>
                 </select>
             </div>
-
+            
             <div id="contact">
                 <p>¿Como te contactamós?</p>
                 <input value="Móvil" type="radio" name="contact" id="Phone_number">
@@ -57,13 +55,15 @@
                 <label class="opc" for="leng3">Francés</label>
             </div>
 
-            <textarea id="comment" placeholder="Cometario" name="comment" id="" cols="30" rows="10"></textarea>
+            <textarea id="comment" placeholder="Comentario" name="comment" id="" cols="30" rows="10"></textarea>
 
             <br>
 
-            <button id="submit" type="button" onclick="getData()">Submit</button>
-
+            <button id="submit" type="submit">Enviar</button>
+            
         </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
